@@ -87,7 +87,7 @@ router.post('/', [
             }
             //this is where you asign jwt props
             jwt.sign(payload,
-                config.get('jwSecret'), {
+                config.get('jwtSecret'), {
                     expiresIn: 36000
                 },
                 (err, token) => {
